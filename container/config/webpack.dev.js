@@ -1,5 +1,4 @@
 const { merge } = require("webpack-merge");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { ModuleFederationPlugin } = require("webpack").container;
 const commonConfig = require("./webpack.common");
 const { dependencies: packageJsonDependencies } = require("../package.json");
@@ -20,7 +19,6 @@ const devConfig = {
       },
       shared: packageJsonDependencies,
     }),
-    new HtmlWebpackPlugin({ template: "public/index.html" }),
   ],
 };
 
