@@ -1,6 +1,9 @@
 name: deploy-container
 
-on: push
+on:
+  push:
+    paths:
+      - packages/container/**
 
 defaults:
   run:
