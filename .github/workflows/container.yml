@@ -1,7 +1,11 @@
 name: deploy-container
 
 on:
-  push
+  push:
+    branches:
+      - "main"
+    paths:
+      - packages/container/**
 
 defaults:
   run:
