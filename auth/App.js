@@ -1,3 +1,4 @@
+// NPM IMPORTS
 import React from "react";
 import { Switch, BrowserRouter, Route } from "react-router-dom";
 import {
@@ -5,6 +6,7 @@ import {
   createGenerateClassName,
 } from "@material-ui/core/styles";
 
+// User Defined IMPORTS
 import Landing from "./src/components/Landing";
 import Pricing from "./src/components/Pricing";
 
